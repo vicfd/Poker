@@ -1,0 +1,10 @@
+4;J1AhAc;J2JsJh;J37c8c;J44sKc;5dKs6cTh9h
+J3: Th9h8c7h6c (Straight to ten)
+J1: AhAcKsTh9h (Pair of aces)
+J4: KcKsTh9h6c (Pair of king)
+J2: JhJcKsTh9h (Pair of jack)
+
+2;J1Ah5c;J2As6c;AcJcKc9c2s
+J2: AcKcJc9c6c (Flush of aces)
+J1: AcKcJc9c5c (Flush of aces)
+

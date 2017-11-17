@@ -1,0 +1,4 @@
+AhAc8s5h;4;2h2d2c2s
+ - Best hand: Full house with deuces and aces (2h2d2cAhAc)
+AhAc8s5h;5;2h2d2c2sAs
+ - Best hand: Full house with aces and deuces (AhAcAs2h2d)

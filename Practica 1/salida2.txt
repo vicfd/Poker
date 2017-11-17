@@ -1,0 +1,39 @@
+4sKc;5;5dKs6cTh9h
+ - Best hand: Pair with king (KcKsTh9h6c)
+
+AhKh;3;QhJhTh
+ - Best hand: Straight flush to aces (AhKhQhJhTh)
+
+AhKh;3;QhJhTc
+ - Best hand: Straight to aces (AhKhQhJhTc)
+ - Draw: Flush
+
+AhAc;3;QhJhTh
+ - Best hand: Pair with aces (AhAcQhJhTh)
+ - Draw: Straight Gutshot
+ - Draw: Flush
+
+Ah2h;3;3h4h5h
+ - Best hand: Straight flush to five (5h4h3h2hAh)
+
+Ah2h;3;3h4h5c
+ - Best hand: Straight to five (5c4h3h2hAh)
+ - Draw: Flush
+
+Ah2h;4;3h4h5c6c
+ - Best hand: Straight to six (6c5c4h3h2h)
+ - Draw: Flush
+
+Ah2h;4;3h4h5c6h
+ - Best hand: Flush with aces (Ah6h4h3h2h)
+
+Ah2h;4;3h4h5h6h
+ - Best hand: Straight flush to six (6h5h4h3h2h)
+
+AhAc;5;As2s3h4dJd
+ - Best hand: Three-of-a-kind with aces (AhAcAsJd4d)
+
+AhAc;3;QhThTh
+ - Best hand: Two-pair with aces and ten (AhAcThThQh)
+ - Draw: Flush
+

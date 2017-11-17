@@ -1,0 +1,63 @@
+Ah3h3c5h3s
+ - Best hand: Three-of-a-kind with treys (3h3c3s)
+
+Ah3h4h5hTh
+ - Best hand: Flush with aces (AhTh5h4h3h)
+ - Draw: Straight Gutshot
+
+Ah2h4h5hTh
+ - Best hand: Flush with aces (AhTh5h4h2h)
+ - Draw: Straight Gutshot
+
+Ah2h3h4hTh
+ - Best hand: Flush with aces (AhTh4h3h2h)
+ - Draw: Straight OpenEnded
+
+AhAc2h2c3h
+ - Best hand: Two-pair with aces and deuces (AhAc2h2c)
+
+2h3h4h5h6h
+ - Best hand: Straight flush to six (6h5h4h3h2h)
+
+2h4h5h6h8h
+ - Best hand: Flush with eight (8h6h5h4h2h)
+ - Draw: Straight Gutshot
+
+2h4h5h6h7h
+ - Best hand: Flush with seven (7h6h5h4h2h)
+ - Draw: Straight Gutshot
+ - Draw: Straight OpenEnded
+
+2h3h5h6h7h
+ - Best hand: Flush with seven (7h6h5h3h2h)
+ - Draw: Straight Gutshot
+
+2h3h4h5h7h
+ - Best hand: Flush with seven (7h5h4h3h2h)
+ - Draw: Straight Gutshot
+ - Draw: Straight OpenEnded
+
+2h3h4h5h8h
+ - Best hand: Flush with eight (8h5h4h3h2h)
+ - Draw: Straight OpenEnded
+
+2h3h4h5h8h
+ - Best hand: Flush with eight (8h5h4h3h2h)
+ - Draw: Straight OpenEnded
+
+2h4h5h6hTh
+ - Best hand: Flush with ten (Th6h5h4h2h)
+ - Draw: Straight Gutshot
+
+AhKhQhJhTh
+ - Best hand: Straight flush to aces (AhKhQhJhTh)
+
+AhKhQhJh9h
+ - Best hand: Flush with aces (AhKhQhJh9h)
+ - Draw: Straight Gutshot
+ - Draw: Straight OpenEnded
+
+AhKhQhJh8h
+ - Best hand: Flush with aces (AhKhQhJh8h)
+ - Draw: Straight OpenEnded
+

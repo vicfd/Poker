@@ -1,0 +1,12 @@
+Ah3h4h5h6h
+Ad3d4d5d6d
+Ac2c4c5c6c
+As2s3s4s6s
+Ah3h4h5h6c
+Ad3d4d5d6c
+Ac2c4c5c6d
+As2s3s4c6c
+Ah3h4h5c6c
+Ad3d4d5c6c
+Ac2c4c5d6d
+As2s3s4c6c
