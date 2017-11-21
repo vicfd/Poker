@@ -253,12 +253,23 @@ public class panelCombo extends JFrame
         
         Resultado resultadoMesa = boardJugada.evaluarJugada(0);
         
-        
         for (int i = 0; i < resultadoCombinaciones.size(); ++i)
         {
-            if (resultadoMesa.getResultadoJugada() == 1 && resultadoCombinaciones.get(i).getResultadoJugada() == 2)
+            if((resultadoCombinaciones.get(i).getResultadoJugada() == 8
+                    || resultadoCombinaciones.get(i).getResultadoJugada() == 7
+                    || resultadoCombinaciones.get(i).getResultadoJugada() == 6
+                    || resultadoCombinaciones.get(i).getResultadoJugada() == 5
+                    || resultadoCombinaciones.get(i).getResultadoJugada() == 4
+                    || resultadoCombinaciones.get(i).getResultadoJugada() == 3) && resultadoCombinaciones.get(i).getValorJugada() <= resultadoMesa.getValorJugada())
+                resultadoCombinaciones.get(i).setResultadoJugada(0);
+            else if (resultadoMesa.getResultadoJugada() == 1 && resultadoCombinaciones.get(i).getResultadoJugada() == 2)
                 resultadoCombinaciones.get(i).setResultadoJugada(1);
-            else if (resultadoMesa.getResultadoJugada() == resultadoCombinaciones.get(i).getResultadoJugada())
+            else if (resultadoMesa.getResultadoJugada() == 1 && resultadoCombinaciones.get(i).getResultadoJugada() == 1)
+                resultadoCombinaciones.get(i).setResultadoJugada(0);
+            
+            if(resultadoCombinaciones.get(i).getResultadoJugada() == 6 && resultadoMesa.getValorJugada() >= resultadoCombinaciones.get(i).getValorJugada())
+                resultadoCombinaciones.get(i).setResultadoJugada(0);
+            else if (resultadoCombinaciones.get(i).getResultadoJugada() == 6 && resultadoMesa.getResultadoJugada() == resultadoCombinaciones.get(i).getResultadoJugada() && resultadoMesa.getValorJugada() >= resultadoCombinaciones.get(i).getResultadoJugada())
                 resultadoCombinaciones.get(i).setResultadoJugada(0);
             
             switch (resultadoCombinaciones.get(i).getResultadoJugada())

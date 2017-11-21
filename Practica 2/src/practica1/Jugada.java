@@ -94,8 +94,8 @@ public class Jugada
         boolean escalera = false, color = false;
         int valor, pareja = 0, trio = 0, poker = 0, colorPalo = 0;
         int valorAnterior = 13, gutshotCalculo = 0, contadorEscalera = 0;
-        int auxiliarEscalera = 0, auxiliarPoker = 0, auxiliarTrio = 0;
-        Stack<Integer> kickers = new Stack<>(), auxiliarPareja = new Stack<>(), auxiliarColor = new Stack<>();
+        int auxiliarEscalera = 0, auxiliarPoker = 0;
+        Stack<Integer> kickers = new Stack<>(), auxiliarTrio = new Stack<>(), auxiliarPareja = new Stack<>(), auxiliarColor = new Stack<>();
         
         for(int i = 0; i < 4; i++)
         {
@@ -167,7 +167,7 @@ public class Jugada
                     break;
                 case 3:
                     trio++;
-                    auxiliarTrio = valor;
+                    auxiliarTrio.push(valor);
                     break;
                 case 2:
                     pareja++;
@@ -218,18 +218,19 @@ public class Jugada
                 resultadoJugada.setKicker(cartas.get(kickers.peek()).get(0));
             }
         }
-        else if(trio == 1 && pareja > 0)
+        else if(trio == 1 && pareja > 0 || trio == 2)
         {
             resultadoJugada.setResultadoJugada(6);
-            for(int i = 0; i < 3; i++)
-            {                
-                resultadoJugada.setCarta(cartas.get(auxiliarTrio).get(i));
-            }
             
-            for(int i = 0; i < 2; i++)
-            {                
-                resultadoJugada.setCarta(cartas.get(auxiliarPareja.peek()).get(i));
-            }            
+            for(int i = 0; i < 3; i++)             
+                resultadoJugada.setCarta(cartas.get(auxiliarTrio.peek()).get(i));
+            
+            if(trio != 2)
+                for(int i = 0; i < 2; i++)            
+                    resultadoJugada.setCarta(cartas.get(auxiliarPareja.peek()).get(i));
+            else
+                for(int i = 0; i < 2; i++)              
+                    resultadoJugada.setCarta(cartas.get(auxiliarTrio.get(0)).get(i));
         }
         else if(color)
         {
@@ -256,19 +257,20 @@ public class Jugada
                     resultadoJugada.setCarta(cartas.get(i).get(0));
             }
         }
-        else if (trio > 0)
+        else if (trio == 1)
         {
             resultadoJugada.setResultadoJugada(3);
             
-            for(int i = 0; i < 3; i++)                
-                resultadoJugada.setCarta(cartas.get(auxiliarTrio).get(i));
+            for(int i = 0; i < 3; i++)             
+                resultadoJugada.setCarta(cartas.get(auxiliarTrio.peek()).get(i));
             
             if(cartas.size() > 4)
             {
                 for (int i = 0; i < 2; i++)
                 {
-                    if(kickers.peek() == auxiliarTrio)
-                        kickers.pop();
+                    for (int j = 0; j < auxiliarTrio.size(); ++j)
+                        if(kickers.peek() == auxiliarTrio.get(j))
+                            kickers.pop();
 
                     resultadoJugada.setKicker(cartas.get(kickers.peek()).get(0));
 
@@ -331,8 +333,7 @@ public class Jugada
         if(nCartas >= 7)
             resultadoJugada.setActivoDraw(false);
         
-        if (cartas.size() > 4)
-            resultadoJugada.calculoValorJugada();
+        resultadoJugada.calculoValorJugada();
         
         return resultadoJugada;
     }

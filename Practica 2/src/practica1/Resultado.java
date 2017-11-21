@@ -74,7 +74,7 @@ public class Resultado implements Comparable<Resultado>
         int aux = 100000;
         valorJugada += (resultadoJugada * aux);
         
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < calcularCartas.size(); i++)
         {
             aux /= 10;
             valorJugada += calcularCartas.get(i).getValor() * aux;
